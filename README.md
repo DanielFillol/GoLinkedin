@@ -1,6 +1,6 @@
 # LinkedIn Visible Crawler
 
-Um crawler web para LinkedIn que captura perfis visíveis e envia convites de conexão, com interface web moderna e controle de limites semanais.
+Um crawler web para LinkedIn que captura perfis visíveis e envia convites de conexão, com controle de limites semanais.
 
 ## 🚀 Características
 
