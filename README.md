@@ -155,9 +155,7 @@ data/uploads/queries/
 ```bash
 make run       # Executar servidor
 make build     # Construir binário
-make dev       # Modo desenvolvimento
 make clean     # Limpar arquivos
-make fmt       # Formatar código
 make tidy      # Organizar dependências
 make help      # Ver todos os comandos
 ```
@@ -169,12 +167,6 @@ make help      # Ver todos os comandos
 PORT=8080                    # Porta do servidor
 CHROME_HEADLESS=false        # Modo headless do Chrome
 CHROME_USER_AGENT=...        # User agent personalizado
-```
-
-### Arquivo .env
-```bash
-cp .env.example .env
-# Edite conforme necessário
 ```
 
 ## 🐛 Troubleshooting
@@ -220,13 +212,6 @@ cp .env.example .env
 - **UI**: Atualizações em tempo real via SSE
 - **Storage**: Append-only CSV para performance
 - **Sessões**: Limpeza automática de memória
-
-## 🔄 Atualizações
-
-- **Limpeza automática** de sessões expiradas
-- **Contadores semanais** resetam automaticamente
-- **Logs em tempo real** para debugging
-- **Métricas persistentes** via CSV
 
 ---
 
