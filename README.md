@@ -5,7 +5,6 @@ Um crawler web para LinkedIn que captura perfis visíveis e envia convites de co
 ## 🚀 Características
 
 - **Interface Web Moderna**: UI responsiva com Tailwind CSS, HTMX e Alpine.js
-- **Crawler Chromedp**: Motor robusto baseado no projeto anterior
 - **Controle de Limites**: Respeita limite de 200 convites/semana por usuário
 - **Sessões em Memória**: Credenciais não são persistidas em disco
 - **Streaming em Tempo Real**: SSE para logs e métricas ao vivo
@@ -23,7 +22,6 @@ Um crawler web para LinkedIn que captura perfis visíveis e envia convites de co
 │  ├─ storage/       # Armazenamento CSV e contadores
 │  └─ http/          # Handlers e middleware
 ├─ data/             # Dados persistentes (CSV, uploads)
-└─ web/static/       # Arquivos estáticos (se necessário)
 ```
 
 ## 📋 Requisitos
