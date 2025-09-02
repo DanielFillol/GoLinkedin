@@ -33,18 +33,24 @@ Um crawler web para LinkedIn que captura perfis visíveis e envia convites de co
 
 ## 🛠️ Instalação
 
-### 🔧 Instalação Local
+1. **Usando [BREW](https://brew.sh) (Opcional)**
+```bash
+brew install chromium --no-quarantine
+brew install go
+```
 
-1. **Clone o repositório**
+
+2. **Clone o repositório**
 ```bash
 git clone <repository-url>
 cd linkedin-visible-crawler
 ```
 
-2. **Instale as dependências**
+3. **Instale as dependências**
 ```bash
 go mod tidy
 ```
+
 
 3. **Execute o servidor**
 ```bash
