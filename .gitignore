@@ -1,0 +1,45 @@
+# Binários
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Dados do crawler
+data/
+*.csv
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários
+tmp/
+temp/
+*.tmp
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Go
+*.test
+*.out
+go.work
+
+# Chrome/Chromedp
+chrome-user-data/
+chromedp-*
