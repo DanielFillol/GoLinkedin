@@ -27,39 +27,11 @@ Um crawler web para LinkedIn que captura perfis visíveis e envia convites de co
 ```
 
 ## 📋 Requisitos
-
-### Opção 1: Docker (Recomendado)
-- **Docker** e **Docker Compose**
-- **Navegador moderno** para a interface web
-
-### Opção 2: Instalação Local
 - **Go 1.22+**
 - **Chrome/Chromium** instalado
 - **Navegador moderno** para a interface web
 
 ## 🛠️ Instalação
-
-### 🐳 Com Docker (Recomendado)
-
-1. **Clone o repositório**
-```bash
-git clone <repository-url>
-cd linkedin-visible-crawler
-```
-
-2. **Execute com Docker Compose**
-```bash
-# Produção
-docker-compose up -d
-
-# Desenvolvimento (com hot reload)
-docker-compose --profile dev up -d
-```
-
-3. **Acesse a interface**
-```
-http://localhost:8080
-```
 
 ### 🔧 Instalação Local
 
@@ -172,55 +144,7 @@ data/uploads/queries/
 └─ <uuid>.txt          # Arquivos de queries temporários
 ```
 
-## 🐳 Comandos Docker
-
-### Produção
-```bash
-# Construir e executar
-docker-compose up -d
-
-# Ver logs
-docker-compose logs -f
-
-# Parar
-docker-compose down
-
-# Reconstruir
-docker-compose up -d --build
-```
-
-### Desenvolvimento
-```bash
-# Executar com hot reload
-docker-compose --profile dev up -d
-
-# Ver logs de desenvolvimento
-docker-compose --profile dev logs -f
-
-# Parar desenvolvimento
-docker-compose --profile dev down
-```
-
-### Comandos Úteis
-```bash
-# Entrar no container
-docker-compose exec linkedin-crawler-web sh
-
-# Ver status dos containers
-docker-compose ps
-
-# Limpar volumes
-docker-compose down -v
-```
-
 ## 🚀 Comandos Disponíveis
-
-### Docker
-```bash
-docker-compose up -d          # Executar em produção
-docker-compose --profile dev up -d  # Executar em desenvolvimento
-docker-compose down           # Parar containers
-docker-compose logs -f        # Ver logs
 ```
 
 ### Local
@@ -251,35 +175,6 @@ cp .env.example .env
 
 ## 🐛 Troubleshooting
 
-### Problemas Docker
-
-1. **Container não inicia**
-   ```bash
-   # Ver logs
-   docker-compose logs
-   
-   # Reconstruir imagem
-   docker-compose up -d --build
-   ```
-
-2. **Erro de permissão no volume**
-   ```bash
-   # Verificar permissões do diretório data/
-   ls -la data/
-   
-   # Corrigir permissões
-   chmod -R 755 data/
-   ```
-
-3. **Porta já em uso**
-   ```bash
-   # Verificar processos na porta 8080
-   lsof -i :8080
-   
-   # Parar containers
-   docker-compose down
-   ```
-
 ### Problemas Comuns
 
 1. **Chrome não encontrado (Local)**
@@ -291,7 +186,7 @@ cp .env.example .env
    - Execute com privilégios adequados
 
 3. **Limite semanal atingido**
-   - Aguarde até segunda-feira
+   - Aguarde até a próxima semana segunda-feira
    - Use conta diferente se necessário
 
 4. **Crawler trava**
@@ -313,20 +208,7 @@ cp .env.example .env
 
 ### Exportação de Dados
 - **CSV**: Download completo de convites
-- **Filtros**: Por usuário, data, query
 - **Paginação**: Navegação por resultados
-
-## 🤝 Contribuição
-
-1. Fork o projeto
-2. Crie uma branch para sua feature
-3. Commit suas mudanças
-4. Push para a branch
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto é para fins educacionais e experimentais. Use com responsabilidade.
 
 ## ⚡ Performance
 
